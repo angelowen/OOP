@@ -1,0 +1,13 @@
+ID number:406410076
+Name:溫彥博
+Environment(哪一台工作站):csie2.cs.ccu.edu.tw
+Email:f12angelo@gmail.com
+Simple Guide:
+	下make指令後即可產生a.out檔案，之後便可開始執行範例程式。
+	這次的程式主要分成type1和type2，if(atoi(argv[1])>0)->run type 1，else run type 2，
+	type1主要是印出黑色區塊的位置，首先，進行裁切，若區塊中混合兩種顏色
+	，在do_cut函式中傳入你的陣列方位東西南北，然後是四個角的位置 有橫的方向和直的方向，
+	如:左上的1/4 就是(Northwest,rowst,rowst+Len/2,colst,colst+Len/2)，
+	分別跑四個方位直到顏色皆相同，確認後若是黑色才開始建樹，Link list 指向它方位和下一個位置
+	，最後把答案印出，而type2也是依循同樣想法回推，先建好樹後才把黑色的部分填到陣列中
+	即可得到解答。
